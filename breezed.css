@@ -1,0 +1,1229 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 17px;
+    font-family: "GT-Easti",Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("./fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("./fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("./fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("./fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("./fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("./fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("./fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("./fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+
+/* ........home section........... */
+
+#home{
+    background-image: url(slide-01.jpg);
+    background-size:cover;
+    background-position: center;
+    height:100vh;
+    position: relative;
+}
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+#home header{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    width: 100%;
+}
+#home header h1 a{
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'GT-Eesti';
+    font-weight:600;
+}
+#home header a{
+    text-transform: uppercase;
+}
+#home header nav ul{
+    display: flex;
+}
+#home header nav .drop{
+    display: none;
+}
+#home header nav ul li{
+    list-style: none;
+    margin:10px;
+}
+#home header nav ul li a{
+    color:aliceblue;
+    font-family: 'GT-Eesti';
+    font-weight:400;
+    font-size: 12px;
+}
+#home header nav ul li a:hover{
+    color:rgb(191, 198, 204);
+}
+#home header nav ul li a.active{
+    color:rgb(191, 198, 204);
+}
+#home header nav ul button{
+    margin:5px;
+    width:35px;
+    height:35px;
+    background-color: white;
+}
+#home header nav ul button:hover{
+    background-color: transparent;
+    border:1px solid white;
+    color: white;
+    cursor: pointer;
+}
+#home header nav ul button i{
+    color:rgb(72, 141, 72);
+    font-weight: 50;
+    font-size: 14px;
+}
+.drop {
+    float: left;
+    overflow: hidden;
+  }
+  
+.drop .dropdown {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    margin-right: 40px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    font-size: 11px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+#home .spotlight{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#home .bottomslide{
+    position:absolute;
+    background-color:rgb(72, 141, 72);
+    border-radius: 50%;
+    bottom: -20px;
+    left:50%;
+} 
+#home .bottomslide:hover{
+    cursor: pointer;
+}
+#home .bottomslide i{
+    padding:18px;
+    color: white;
+    font-size: 15px;
+}
+#home .arrowleft{
+    position: absolute;
+    left:0;
+    top:50%;
+}
+#home .arrowright{
+    position: absolute;
+    right: 0;
+    top:50%;
+}
+#home .arrowleft img, #home .arrowright img{
+    width:22px;
+    height: 22px;
+}
+#home .arrowleft img:hover , #home .arrowright img:hover{
+    cursor: pointer;
+}
+#home .spotlight h1{
+    color:aliceblue;
+    margin: 10px;
+    text-transform: uppercase;
+    font-family: 'GT-Eesti';
+    font-weight:bolder;
+    font-size: 15px;
+}
+#home .spotlight p{
+    color: aliceblue;
+    margin: 10px;
+    font-size: 33px;
+    font-family: 'GT-Eesti';
+    font-weight:lighter;
+    letter-spacing: 3px;
+}
+#home .spotlight .button{
+    margin-top: 40px;
+}
+#home .spotlight .button .button-style-one{
+    border:1px solid white;
+    background-color: transparent;
+    color:aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 12px;
+    width:125px;
+    height: 40px;
+    margin: 2px;
+}
+#home .spotlight .button .button-style-one:hover{
+    background-color: aliceblue;
+    color:rgb(72, 141, 72);
+    cursor: pointer;
+}
+#home .spotlight .button .button-style-two{
+    border:1px solid white;
+    background-color: aliceblue;
+    color:rgb(72, 141, 72);
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 12px;
+    width:125px;
+    height: 40px;
+    margin: 2px;
+}
+#home .spotlight .button .button-style-two:hover{
+    background-color: transparent;
+    color:aliceblue;
+    cursor: pointer;
+}
+/* ..........about section............. */
+#about{
+    display: block;
+    width:100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'GT-Eesti';
+}
+#about .top{
+    display: flex;
+    border-bottom: 2px solid gainsboro;
+    width: 100%;
+    padding-bottom: 60px;
+}
+#about .top .left{
+    display: block;
+    margin:20px;
+    width: 50%;
+}
+#about .top .left h4{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'GT-Eesti';
+    font-weight: lighter;
+    color:#488d48;
+}
+#about .top .left h1{
+    font-size: 33px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'GT-Eesti';
+}
+#about .top .left ul{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width:100%;
+}
+#about .top .left ul li{
+    display: flex;
+    line-height: 3em;
+    margin-right: 30px;
+}
+#about .top .left ul li .about_img{
+    width: 35px;
+    height: 35px;
+    margin-right:10px ;
+    padding:10px;
+}
+#about .top .left ul li .about_img img{
+    width: 100%;
+    margin-right: 10px;
+}
+#about .top .left ul li h6{
+    text-transform: uppercase;
+    font-size:15px;
+    margin:2px;
+    font-family: 'GT-Eesti';
+}
+#about .top .left a button{
+    background-color: rgba(95,183,89,255);
+    color: white;
+    width: 150px;
+    padding:10px;
+    border-radius: 20px;
+    margin-top:55px;
+    font-size: 13px;
+    font-family: 'GT-Eesti'; 
+}
+#about .top .left a button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color:#488d48;
+    border:1px solid #488d48;
+}
+#about .top .right{
+    width: 50%;
+    margin-top: 65px;
+}
+#about .top .right p{
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 17px;
+    color: grey;
+    font-family: 'GT-Eesti';
+}
+#about .top .right p span{
+    color:blue;
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 17px;
+    font-family: 'GT-Eesti';
+}
+#about .top .right p span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#about .bottom{
+    margin-top:70px;
+    display: flex;
+    width: 100%;
+}
+#about .bottom ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+#about .bottom ul li{
+    display: flex;
+    width:32%;
+    height:200px;
+}
+#about .bottom ul li .shortpic img{
+    margin-right:20px;
+}
+#about .bottom ul li .content{
+    display: block;
+    width: 290px;
+}
+#about .bottom ul li .content h3{
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-family: 'GT-Eesti';
+}
+#about .bottom ul li .content p{
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: grey;
+    font-family: 'GT-Eesti';
+}
+#about .bottom ul li .content a button{
+    border:none;
+    border-style: none;
+    outline-style: none;
+    color: black;
+    background-color: transparent;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'GT-Eesti';
+}
+#about .bottom ul li .content a button:hover{
+    cursor: pointer;
+    /* text-decoration: underline; */
+    border-bottom:2px solid black;
+}
+/* ........newsletter section........... */
+#newsletter{
+    background-image: url(slide-02.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+#newsletter .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#newsletter .letters{
+    width: 75%;
+    text-align: center;
+}
+#newsletter .letters h3{
+    color: white;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-family: 'GT-Eesti';
+}
+#newsletter .letters h1{
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    font-family: 'GT-Eesti';
+}
+#newsletter .letters p{
+    text-align: center;
+    color: white;
+    line-height: 1.5em;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: 'GT-Eesti';
+}
+#newsletter .letters form{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#newsletter .letters form input{
+    border:1px solid white;
+    outline-style: none;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 8px;
+    font-size: 14px;
+    width:450px;
+    margin: 20px;
+    height: 20px;
+    font-family: 'GT-Eesti';
+    color:white;
+}
+#newsletter .letters form input::placeholder {
+    color: white;
+    opacity: 1;
+  }
+#newsletter .letters form button{
+    background-color: white;
+    height:40px;
+    color: #488d48;
+    font-size: 13px;
+    padding: 6px;
+    width:170px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-family: 'GT-Eesti';
+}
+#newsletter .letters form button:hover{
+    border:2px solid white;
+    color:white;
+    background-color: transparent;
+    cursor: pointer;
+}
+/* .........projects section........... */
+#projects{
+    width:100%;
+    height:auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+}
+#projects .latest{
+    display:flex;
+    justify-content: space-between;
+}
+#projects .latest .left{
+    display:block;
+    width: 20%;
+}
+#projects .latest .left h3{
+    text-transform: uppercase;
+    font-size: 15px;
+    color:rgba(95,183,89,255);
+    font-weight: lighter;
+    font-family: 'GT-Eesti';
+}
+#projects .latest .left h1{
+    font-size: 33px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+    font-family: 'GT-Eesti';
+}
+#projects .latest .left ul{
+    display:block;
+}
+#projects .latest .left ul li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+#projects .latest .left ul li a{
+    text-transform: uppercase;
+    color: grey;
+    font-size: 13px;
+    font-family: 'GT-Eesti';
+}
+#projects .latest .left ul li a:hover{
+    color:rgba(95,183,89,255);
+}
+#projects .latest .left ul li a.active{
+    color:rgba(95,183,89,255)
+}
+#projects .latest .right{
+    width: 75%;
+    padding-left: 18px;
+}
+#projects .latest .right ul{
+    display:grid;
+    width: 100%;
+    height:100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+}
+#projects .latest .right ul li{
+    list-style: none;
+    margin:10px;
+    width:95%;
+}
+#projects .latest .right ul li img{
+    width: 100%;
+}
+#projects .latest .right ul li img:hover{
+    cursor: pointer;
+}
+/* ...........team section........... */
+#team{
+    width:100%;
+    background-image:url(slide-03.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 50px;
+}
+#team .members{
+    padding-top: 50px;
+    display:block;
+    width: 100%;
+}
+#team .members h3{
+    text-transform: uppercase;
+    color: white;
+    font-weight: lighter;
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'GT-Eesti';
+
+}
+#team .members h2{
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: 'GT-Eesti';
+
+}
+#team .members ul{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+}
+#team .members ul li{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:32%;
+}
+#team .members ul li .team_img{
+    width:100%;
+}
+#team .members ul li img{
+    width:100%;
+}
+#team .members ul h5{
+    color: white;
+    font-size: 15px;
+    margin: 5px;
+    font-family: 'GT-Eesti';
+
+}
+#team .members ul span{
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+/* contact section styling start */
+
+#contact{
+    width: 100%;
+    background-image: url(dotted-map-bg.png);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+}
+#contact .contacts{
+   display: flex;
+   justify-content: space-between;
+}
+#contact .contacts .left{
+    display: block;
+    padding-top:70px;
+    width: 35%;
+    height:400px;
+}
+#contact .contacts .left h3{
+    text-transform: uppercase;
+    font-size: 15px;
+    color:rgba(95,183,89,255);
+    font-weight: lighter;
+    font-family: 'GT-Eesti';
+
+}
+#contact .contacts .left h1{
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5em;
+    font-weight:700;
+    font-family: 'GT-Eesti';
+
+}
+#contact .contacts .left ul{
+    display: block;
+}
+#contact .contacts .left ul li{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#contact .contacts .left ul li:hover{
+    cursor: pointer;
+}
+#contact .contacts .left ul li img{
+    margin-right:15px;
+}
+#contact .contacts .left ul li a{
+    margin-top: 10px;
+    color: black;
+    font-size: 14px;
+}
+#contact .contacts .right{
+    display: block;
+    padding-top: 120px;
+    width: 80%;
+}
+#contact .contacts .right .inp{
+    display: block;
+    width:100%;
+}
+#contact .contacts .right .inp form{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows:1fr 1fr ;
+    width:100%;
+}
+#contact .contacts .right .inp form input{
+    width: 90%;
+    height: 35px;
+    border: 1px solid gainsboro;
+    justify-content: space-around;
+    font-size: 15px;
+    margin: 15px;
+    padding: 5px;
+}
+#contact .contacts .right .inp textarea{
+    border: 1px solid gainsboro;
+    justify-content: space-around;
+    margin: 15px;
+    height: 120px;
+    width: 95%;
+    resize:none;
+    padding: 5px;
+}
+::placeholder {
+    color: gray;
+    opacity: 1;
+}
+#contact .contacts .right .inp button{
+    width: 200px;
+    height: 40px;
+    margin: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(95,183,89,255);
+    color: white;
+}   
+#contact .contacts .right .inp button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color:#488d48;
+    border:2px solid #488d48;
+}
+#footer{
+    background-image: url(banner-bg.jpg);
+    width: 100%;
+    height:170px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer .details .left p{
+    color: white;
+    font-size: 15px;
+    font-family: 'GT-Eesti';
+}
+#footer .details .left p i{
+    color: aliceblue;
+}
+#footer .details .right{
+    display: flex;
+    align-items: center;
+}
+#footer .details .right h5{
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-right: 10px;
+    font-family: 'GT-Eesti';
+}
+#footer .details .right ul{
+    display: flex;
+} 
+#footer .details .right ul li:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+#footer .details .right ul li{
+    list-style:none;
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:rgba(95,183,89,255);
+    background-color: white;
+}
+/* ................responsive................. */
+
+@media all and (max-width:980px){
+    .wrapper{
+        width: 85%;
+    }
+    #about{
+        padding-bottom: 40px;
+    }
+    #about .top .left h1{
+        font-size: 28px;
+    }
+    #about .top{
+        padding-bottom: 30px;
+    }
+    #newsletter .letters{
+        width: 85%;
+    }
+}
+@media all and (max-width:768px){
+    #about .top .left h1{
+        font-size: 24px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+    }
+    #about .top .left ul{
+        display: block;
+    }
+    #newsletter .letters h1{
+        font-size: 28px;
+    }
+    #newsletter .letters p{
+        font-size: 14px;
+    }
+    #newsletter .letters form input{
+    font-size: 11px;
+    width:400px;
+    height: 18px;
+    }
+    #newsletter .letters form button{
+        font-size: 11px;
+        width:140px;
+        height: 35px;
+    }
+    #projects .latest .left h1{
+        font-size: 29px;
+    }
+    #projects .latest .right{
+        width: 70%;
+    }
+    #projects .latest .left{
+        width: 25%;
+    }
+    #contact .contacts .left h1{
+        font-size: 30px;
+    }
+    #contact .contacts .right .inp form input{
+        height: 30px;
+        font-size: 12px;
+    }
+    #contact .contacts .right .inp textarea{
+        height: 90px;
+        font-size: 12px;
+    }
+    #contact .contacts .right .inp button{
+        height: 34px;
+    }
+    #about .bottom ul li .shortpic img{
+        width: 30px;
+        height: 30px;
+    }
+    #about .bottom ul li .content h3{
+        font-size: 13px;
+    }
+    #about .bottom ul li .content p{
+        font-size: 12px;
+    }
+    #about .bottom ul li .content a button{
+        font-size: 12px;
+    }
+    #contact .contacts .left h3{
+        font-size: 13px;
+    }
+    #contact .contacts .left h1{
+        font-size: 28px;
+    }
+    #contact .contacts .left ul li{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #contact .contacts .left ul li img{
+        width: 25px;
+        height: 25px;
+    }
+    #contact .contacts .left ul li a{
+        font-size: 12px;
+    }
+    #contact .contacts .right .inp button{
+        width: 150px;
+        height: 30px;
+        font-size: 11px;
+    }
+}
+@media all and (max-width:640px){
+    .wrapper{
+        width: 90%;
+    }
+    #home header h1 a{
+        font-size: 20px;
+    }
+    #home header nav ul li a{
+        font-size: 10px;
+    }
+    #home header nav ul button{
+        width:20px;
+        height:20px;
+    }
+    #home header nav ul button i{
+        font-size: 12px;
+    }
+    #home .spotlight h1{
+        font-size: 13px;
+    }
+    #home .spotlight p{
+        font-size: 28px;
+    }
+    #home .spotlight .button .button-style-1{
+        font-size: 10px;
+        width:100px;
+        height: 30px;
+    }
+    #home .spotlight .button .button-style-2{
+        font-size: 10px;
+        width:100px;
+        height: 30px;
+    }
+    #home .bottomslide{
+        width:40px;
+        height:40px;
+    }
+    #home .bottomslide i{
+        padding:14px;
+        font-size: 13px;
+    }
+    #about .top{
+        display: block;
+    }
+    #about .top .left{
+        margin:0px;
+        width: 100%;
+    }
+    #about .top .left{
+        width: 100%;
+    }
+    #about .top .left ul{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width:100%;
+    }
+    #about .top .right{
+        width: 100%;
+    }
+    #about .bottom ul li .shortpic img{
+        width: 30px;
+        height: 30px;
+    }
+    #about .bottom ul li .content h3{
+        font-size: 13px;
+    }
+    #about .bottom ul li .content p{
+        font-size: 12px;
+    }
+    #about .bottom ul li .content a button{
+        font-size: 12px;
+    }
+    #about .top .right p{
+        font-size: 15px;
+    }
+    #projects .latest{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #projects .latest .left{
+        width: 100%;
+        text-align: center;
+    }
+    #projects .latest .right{
+        width: 100%;
+    }
+    #projects .latest .right ul{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+    }
+    #projects .latest .right ul li{
+        margin: 0px;
+    }
+    #contact .contacts .left h3{
+        font-size: 13px;
+    }
+    #contact .contacts .left h1{
+        font-size: 28px;
+    }
+    #contact .contacts .left ul li{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #footer .details .left p{
+        font-size: 11px;
+    }
+    #footer .details .right h5{
+        font-size: 10px;
+    }
+    #footer .details .right ul li{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer .details .right ul li i{
+        font-size: 10px;
+    }
+}
+@media all and (max-width:480px){
+    #home header nav .drop{
+        display: flex;
+    }
+    #home header nav ul{
+        display: none;
+    }
+    #home .spotlight p{
+        text-align: center;
+    }
+    .drop:hover .dropdown-content{
+        display: block;
+      }
+    #about .top .left h4{
+        font-size: 11px;
+    }
+    #about .top .left h1{
+        font-size: 20px;
+    }
+    #about .top .right p{
+        font-size: 13px;
+    }
+    #about .top .right p span{
+        font-size: 13px;
+    }
+    #about .top .left ul li{
+        line-height: 2em;
+        margin-right: 20px;
+    }
+    #about .top .left ul li .about_img{
+        width: 30px;
+        height: 30px;
+    }
+    #about .top .left ul li h6{
+        font-size:12px;
+    }
+    #about .top .left a button{
+        width: 100px;
+        font-size: 11px;     
+    }
+    #about .bottom ul{
+        display: block;
+        justify-content: center;
+    }
+    #about .bottom ul li{
+        width:100%;
+        height:130px;
+    }
+    #about .bottom ul li .content{
+        width: 100%;
+    }
+    #newsletter .letters h3{
+        font-size: 15px;
+    }
+    #newsletter .letters h1{
+        font-size: 25px;
+    }
+    #newsletter .letters p{
+        font-size: 14px;
+    }
+    #newsletter .letters form{
+        margin-top: 25px;
+    }
+    #newsletter .letters form input{
+        font-size: 12px;
+        width:400px;
+        margin: 15px;
+        height: 15px;
+    }
+    #newsletter .letters form button{
+        background-color: white;
+        height: 31px;
+        font-size: 10px;
+        width:170px;
+        font-weight: bold;
+    }
+    #projects{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    #projects .latest .left h3{
+        font-size: 13px;
+    } 
+    #projects .latest .left h1{
+        font-size: 17px;
+        line-height: normal;
+    }
+    #projects .latest .left ul li a{
+        font-size: 11px;
+    } 
+    #projects .latest .right ul{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+    }
+     #team .members ul{
+        display: block;
+    }
+    #team .members ul li{
+        display:block;
+        width:100%;
+        margin-top: 10px;
+    }
+    #contact{
+        padding-bottom: 80px;
+    }
+    #contact .contacts .left{
+        width: 40%;
+    }
+    #contact .contacts .left h3{
+        font-size: 13px;
+    }
+    #contact .contacts .left h1{
+        font-size: 25px;
+        line-height: normal;
+    }
+    #contact .contacts .left ul{
+        display: block;
+    }
+    #contact .contacts .left ul li a{
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    #contact .contacts .right .inp form{
+        display: block;
+    }
+    #contact .contacts .right .inp form input{
+        height: 30px;
+        font-size: 14px;
+        margin: 12px;
+    }
+    #contact .contacts .right .inp textarea{
+        margin: 12px;
+        height: 90px;
+        width: 90%;
+        resize:none;
+        padding: 5px;
+    }
+    #contact .contacts .right .inp button{
+        width: 150px;
+    }  
+    #footer .details .right{
+        display: block;
+        padding-top: 20px;
+    } 
+    #footer .details .right ul{
+        padding-top: 5px;
+    } 
+}
+@media all and (max-width:360px){
+    #home .spotlight p{
+        text-align: center;
+    }
+    #about .top{
+        display: block;
+    }
+    #about .top .left h1{
+        font-size: 25px;
+    }
+    #about .top .left{
+        margin:10px;
+        width: 100%;
+    }
+    #about .top .left h1{
+        font-size: 33px;
+    }
+    #about .top .left ul li{
+        margin-right: 10px;
+    }
+    #about .top .left a button{
+        margin-top:20px; 
+    }
+    #about .top .right{
+        width: 100%;
+        margin-top: 30px;
+    }
+    #projects .latest .left{
+        width: 40%;
+    }
+    #projects .latest .left h3{
+        font-size: 12px;
+    }
+    #projects .latest .left h1{
+        font-size: 24px;
+        line-height: normal;
+    }
+    #projects .latest .left ul li a{
+        font-size: 11px;
+    }
+    #projects .latest .right ul{
+        display:block;
+    }
+    #contact{
+        padding-bottom: 50px;
+    }
+    #contact .contacts{
+    display: block;
+    }
+    #contact .contacts .left{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    #contact .contacts .right{
+        padding-top: 20px;
+        width: 100%;
+    }
+    #contact .contacts .right .inp form{
+        display: block;
+        width:100%;
+    }
+    #contact .contacts .right .inp form input{
+        width: 90%;
+    }
+    #contact .contacts .right .inp textarea{
+        height: 70px;
+        width: 90%;
+    }
+    #contact .contacts .right .inp button{
+        width: 150px;
+    }   
+    #footer{
+        background-image: url(banner-bg.jpg);
+        width: 100%;
+        height:170px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer .details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #footer .details .left p{
+        font-size: 10px;
+    }
+}
